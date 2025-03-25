@@ -1,0 +1,16 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  NODE_ENV = "production"
+
+[dev]
+  command = "npm run dev"
+  publish = "dist"
+  port = 3000
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
